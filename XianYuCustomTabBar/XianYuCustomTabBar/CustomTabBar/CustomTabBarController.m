@@ -42,7 +42,6 @@
     
     
     CustomTabBar *mainTabBar = [[CustomTabBar alloc] init];
-    mainTabBar.backgroundColor = [UIColor redColor];
     mainTabBar.frame = self.tabBar.bounds;
     mainTabBar.delegate = self;
     
@@ -53,7 +52,7 @@
 //    
     [self.tabBar setBackgroundImage:[UIImage new]];
     [self.tabBar setShadowImage:[UIImage new]];
-    [self dropShadowWithOffset:CGSizeMake(0, -0.5) radius:1 color:[UIColor redColor] opacity:0.3];
+    [self dropShadowWithOffset:CGSizeMake(0, -0.5) radius:1 color:[UIColor blackColor] opacity:0.3];
     
 }
 

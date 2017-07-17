@@ -38,7 +38,6 @@
 
 - (void)setupPostButton {
     UIButton * postBtn = [UIButton new];
-    postBtn.backgroundColor = [UIColor orangeColor];
     postBtn.adjustsImageWhenHighlighted = NO;
     [postBtn setBackgroundImage:[UIImage imageNamed:@"post_normal"] forState:UIControlStateNormal];
     [postBtn addTarget:self action:@selector(postGoodAction) forControlEvents:UIControlEventTouchUpInside];
@@ -74,7 +73,6 @@
     CustomButton * tabBarBtn = [CustomButton new];
     CGFloat btnW = self.frame.size.width/5;
     tabBarBtn.frame = CGRectMake(0, 0, btnW, 0);
-    tabBarBtn.backgroundColor = [UIColor greenColor];
     [self addSubview:tabBarBtn];
     tabBarBtn.tabBarItem = tabBarItem;
     [tabBarBtn addTarget:self action:@selector(tabBarBtnClick:) forControlEvents:UIControlEventTouchDown];
